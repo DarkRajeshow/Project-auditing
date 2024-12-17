@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply overflow-x-hidden w-screen min-h-screen font-normal bg-gray-200
+} 
+
+* {
+  font-family: "Montserrat", sans-serif;
+  @apply m-0 p-0 transition-all box-border
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-zinc-900/70 rounded-md
+}
+
+::-webkit-scrollbar-thumb {
+  @apply border-2 rounded-md bg-zinc-700
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #718096;
+}
+
+td,
+th {
+  @apply border border-zinc-500 text-center text-sm sm:text-base px-2 sm:px-6 py-3
+}
+
+.info>td, .info>th {
+  @apply text-left bg-zinc-300/30 border-zinc-600 text-sm sm:text-base md:text-lg
+}
+
+th {
+  @apply font-normal sm:font-medium
+}
+
+input, select {
+  @apply w-full p-1 text-sm sm:text-base sm:p-2 border-none outline-none rounded-sm text-black/90 bg-zinc-300/40 focus:bg-zinc-300/60 mt-1
+}
+
+option {
+  @apply text-sm
+}
+
+label {
+  @apply block text-zinc-700 py-1 sm:py-2 text-sm sm:text-base font-medium
+}
+
+button {
+  @apply shadow-[1px_1px_0_0] shadow-black hover:shadow-none
+}
+
+.updateButton {
+  @apply text-sm sm:text-base md:text-lg text-zinc-100 font-normal py-2 px-4 rounded-md bg-[#bcb8ff] hover:font-semibold
+}
+
+tbody>tr>td{
+  @apply p-0
+}
+
+tbody>tr>td>input, tbody>tr>td>select{
+  @apply h-12 w-[95%] my-1
+}
+
